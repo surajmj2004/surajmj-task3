@@ -1,0 +1,141 @@
+.containers{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;              
+    padding:40px;
+    gap:30px;
+    background:linear-gradient(135deg,#b9dcaa,#d8efcf);
+
+    animation:fadeIn 1s ease;
+}
+
+.containers > div:first-child{
+    width:48%;
+    min-width:600px;
+}
+
+.forma{
+    width:45%;
+    min-width:300px;
+    margin-top:45px;
+    
+    border-radius:12px;
+    padding:40px;
+    background-color:#e6f5e1;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    transition:all 0.4s ease;
+}
+
+.forma:hover{
+    transform:translateY(-8px);
+    box-shadow:0 35px 70px rgba(0,0,0,0.2);
+}
+
+.h1a{
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align:center;
+    line-height:1.5;
+    color:#1f3d2b;
+}
+
+.p1,
+.p2{
+    line-height:1.6;
+    font-size:18px;
+    color:#2f5035;
+}
+
+.forma input,
+.forma textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:30px;
+    border:none;
+    border-bottom:1px solid #4a7c59;
+    background-color:#e6f5e1;
+    resize:none;
+    transition:all 0.3s ease;
+}
+
+
+.forma input:hover,
+.forma textarea:hover{
+    border-bottom:2px solid #3b7d4a;
+}
+
+.forma input:focus,
+.forma textarea:focus{
+    outline:none;
+    border-bottom:2px solid #1b8a3a;
+    background-color:#d8efd4;
+    transform:scale(1.02);
+}
+
+
+.h6a{
+    margin-bottom:3px;
+    font-weight:bold;
+    font-size:18px;
+    color:#264327;
+}
+
+
+.buttona{
+    background:linear-gradient(135deg,#2f6f3e,#3c8c4f);
+    color:#ffffff;
+    border-radius:10px;
+    height:45px;
+    width:120px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+/* button hover */
+.buttona:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    background:linear-gradient(135deg,#3c8c4f,#2f6f3e);
+}
+
+
+/* MAP */
+.map{
+    width:100%;
+    max-width:450px;
+    height:250px;
+    border-radius:10px;
+    border:2px solid #264327;
+    transition:all 0.3s ease;
+}
+
+.map:hover{
+    transform:scale(1.03);
+}
+
+@media (max-width:900px){
+
+    .containers{
+        flex-direction:column;
+    }
+
+    .containers > div,
+    .forma{
+        width:90%;
+    }
+
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

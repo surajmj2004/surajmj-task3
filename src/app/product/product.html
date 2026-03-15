@@ -1,0 +1,21 @@
+<div class="container d-flex justify-content-around " style="padding: 30px;">
+<div class="row g-5">
+@for (item of products; track item.id) {
+  
+    <div class="col-3">
+     <div class="card" style="width: 18rem;height: fit-content;">
+  <img src="{{item.image}}" class="card-img-top imga " alt="profile">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title tit">{{item.title}}</h5>
+    <p class="card-text desc">{{item.description}}</p>
+    <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+  </div>
+</div>
+    </div>
+  
+
+} @empty {
+<li>There are no items.</li>
+}
+</div>
+</div>
